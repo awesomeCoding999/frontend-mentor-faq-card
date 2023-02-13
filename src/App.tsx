@@ -1,6 +1,6 @@
 import "./App.css";
-import { Footer } from "./components/Footer";
-import { FAQCard } from "./components/FAQCard";
+import { Footer } from "./components/footer";
+import { FAQCard } from "./components/faq-card";
 function App() {
   return (
     <div>
