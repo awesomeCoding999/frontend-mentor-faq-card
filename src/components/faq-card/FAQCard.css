@@ -1,0 +1,11 @@
+.hide-answer {
+  display: none;
+}
+
+.show-answer {
+  display: block;
+}
+
+.rotate-icon-up {
+  transform: rotate(180deg);
+}
