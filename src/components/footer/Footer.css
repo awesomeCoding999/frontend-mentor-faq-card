@@ -1,0 +1,15 @@
+footer {
+  text-align: center;
+  background-color: var(--white);
+  padding: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--very-dark-desaturated-blue);
+}
+
+footer a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}

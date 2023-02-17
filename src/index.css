@@ -7,14 +7,15 @@
 }
 
 :root {
-  --white: hsl(0, 0%, 100%);
-  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
-  --soft-red: hsl(14, 88%, 65%);
-  --soft-violet: hsl(273, 75%, 66%);
-  --soft-blue: hsl(240, 73%, 65%);
-  --light-grayish-blue: hsl(240, 5%, 91%);
-  --dark-grayish-blue: hsl(240, 6%, 50%);
-  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --white: #ffffff;
+  --very-dark-desaturated-blue: #1d1e35;
+  --dark-blue: #4b4c5f;
+  --soft-red: #f47c57;
+  --soft-violet: #af67e9;
+  --soft-blue: #6565e7;
+  --light-grayish-blue: #e7e7e9;
+  --dark-grayish-blue: #787887;
+  --very-dark-grayish-blue: #4a4b5e;
 }
 
 body {
