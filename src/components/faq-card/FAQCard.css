@@ -7,8 +7,8 @@
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 23px;
   width: 327px;
-  margin: 148px auto 30px;
-  padding: 0 24px 48px;
+  margin: 9.25rem auto 1.875rem;
+  padding: 0 1.5rem 3rem;
   position: relative;
 }
 
@@ -16,12 +16,12 @@
   background: url("../../images/bg-pattern-mobile.svg") no-repeat bottom;
   background-size: 90%;
   padding: 1rem;
-  margin-top: -125px;
+  margin-top: -7.813rem;
 }
 
 .title {
-  margin-top: 30px;
-  margin-bottom: 38px;
+  margin-top: 1.875rem;
+  margin-bottom: 2.375rem;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .question {
-  font-size: 13px;
+  font-size: 0.813rem;
   color: var(--dark-blue);
   text-align: start;
 }
@@ -65,10 +65,10 @@
 .show-answer {
   display: block;
   color: var(--dark-grayish-blue);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 18px;
-  margin-top: 12px;
-  margin-bottom: 16px;
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
   text-align: start;
 }
 
@@ -77,13 +77,13 @@
 }
 
 .arrow-icon {
-  width: 15px;
-  height: 10px;
+  width: 0.938rem;
+  height: 0.625rem;
 }
 
 .divider {
-  margin: 17px 0;
-  height: 1px;
+  margin: 1.063rem 0;
+  height: 0.063rem;
   border: none;
   background-color: var(--light-grayish-blue);
 }
@@ -92,8 +92,8 @@
   .illustration-box {
     display: block;
     position: absolute;
-    left: -90px;
-    top: 150px;
+    left: -5.625rem;
+    top: 9.375rem;
   }
 
   .card-container {
@@ -109,7 +109,7 @@
   .woman-at-desk-img {
     background: url("../../images/bg-pattern-desktop.svg") no-repeat right;
     margin-top: 0;
-    margin-left: -80px;
+    margin-left: -5rem;
     background-size: auto;
   }
 
