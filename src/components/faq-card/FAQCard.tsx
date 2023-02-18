@@ -37,33 +37,33 @@ export const FAQCard = () => {
           <ul className="faq-items">
             {faqList.map(({ id, question, answer }) => (
               <li className="faq" key={id}>
-                <button className="arrow-btn" id={id} onClick={toggleAnswer}>
-                  <div className="question-container">
-                    <p
-                      className={`question ${
-                        activeFAQ === id ? "active-question" : ""
-                      }`}
-                    >
-                      {question}
-                    </p>
+                <div className="question-container">
+                  <button
+                    className={`question arrow-btn ${
+                      activeFAQ === id ? "active-question" : ""
+                    }`}
+                    id={id}
+                    onClick={toggleAnswer}
+                  >
+                    {question}
+                  </button>
 
-                    <img
-                      className={`arrow-icon ${
-                        activeFAQ === id ? "rotate-icon-up" : ""
-                      }`}
-                      src={arrowIcon}
-                      alt="arrow icon"
-                    />
-                  </div>
-                  <p
-                    className={`
+                  <img
+                    className={`arrow-icon ${
+                      activeFAQ === id ? "rotate-icon-up" : ""
+                    }`}
+                    src={arrowIcon}
+                    alt="arrow icon"
+                  />
+                </div>
+                <p
+                  className={`
                   ${activeFAQ === id ? "show" : "hide"}-answer
                `}
-                  >
-                    {answer}
-                  </p>
-                  <hr className="divider" />
-                </button>
+                >
+                  {answer}
+                </p>
+                <hr className="divider" />
               </li>
             ))}
           </ul>
