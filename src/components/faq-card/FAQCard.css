@@ -28,11 +28,18 @@
 .question-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .question {
   font-size: 13px;
   color: var(--dark-blue);
+  text-align: start;
+}
+
+.question:hover {
+  color: var(--soft-red);
+  cursor: pointer;
 }
 
 .active-question {
@@ -43,6 +50,8 @@
 .arrow-btn {
   border: none;
   background-color: var(--white);
+  cursor: pointer;
+  width: 90%;
 }
 
 .hide-answer {
@@ -56,10 +65,16 @@
   line-height: 18px;
   margin-top: 12px;
   margin-bottom: 16px;
+  text-align: start;
 }
 
 .rotate-icon-up {
   transform: rotate(180deg);
+}
+
+.arrow-icon {
+  width: 15px;
+  height: 10px;
 }
 
 .divider {

@@ -19,7 +19,7 @@ export const FAQCard = () => {
   };
 
   return (
-    <div className="faq-card">
+    <main className="faq-card">
       <picture>
         <source media="(min-width: 64em)" srcSet={womanAtDeskLarge} />
         <img
@@ -33,34 +33,37 @@ export const FAQCard = () => {
         <ul className="faq-items">
           {faqList.map(({ id, question, answer }) => (
             <li className="faq" key={id}>
-              <div className="question-container">
-                <p
-                  className={`question ${
-                    activeFAQ === id ? "active-question" : ""
-                  }`}
-                >
-                  {question}
-                </p>
-                <button className="arrow-btn" id={id} onClick={toggleAnswer}>
+              <button className="arrow-btn" id={id} onClick={toggleAnswer}>
+                <div className="question-container">
+                  <p
+                    className={`question ${
+                      activeFAQ === id ? "active-question" : ""
+                    }`}
+                  >
+                    {question}
+                  </p>
+
                   <img
-                    className={`${activeFAQ === id ? "rotate-icon-up" : ""}`}
+                    className={`arrow-icon ${
+                      activeFAQ === id ? "rotate-icon-up" : ""
+                    }`}
                     src={arrowIcon}
                     alt="arrow icon"
                   />
-                </button>
-              </div>
-              <p
-                className={`
+                </div>
+                <p
+                  className={`
                   ${activeFAQ === id ? "show" : "hide"}-answer
                `}
-              >
-                {answer}
-              </p>
-              <hr className="divider" />
+                >
+                  {answer}
+                </p>
+                <hr className="divider" />
+              </button>
             </li>
           ))}
         </ul>
       </div>
-    </div>
+    </main>
   );
 };
