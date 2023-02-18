@@ -3,6 +3,7 @@ import { faqList } from "../../faq";
 import arrowIcon from "../../images/icon-arrow-down.svg";
 import womanAtDeskLarge from "../../images/illustration-woman-online-desktop.svg";
 import womanAtDeskSmall from "../../images/illustration-woman-online-mobile.svg";
+import illustrationBox from "../../images/illustration-box-desktop.svg";
 import "./FAQCard.css";
 
 export const FAQCard = () => {
@@ -19,50 +20,54 @@ export const FAQCard = () => {
   };
 
   return (
-    <main className="faq-card">
-      <picture>
-        <source media="(min-width: 64em)" srcSet={womanAtDeskLarge} />
-        <img
-          className="woman-at-desk-img"
-          src={womanAtDeskSmall}
-          alt="woman at desk"
-        />
-      </picture>
-      <div className="card-container">
-        <h1 className="title">FAQ</h1>
-        <ul className="faq-items">
-          {faqList.map(({ id, question, answer }) => (
-            <li className="faq" key={id}>
-              <button className="arrow-btn" id={id} onClick={toggleAnswer}>
-                <div className="question-container">
-                  <p
-                    className={`question ${
-                      activeFAQ === id ? "active-question" : ""
-                    }`}
-                  >
-                    {question}
-                  </p>
+    <main>
+      <div className="faq-card">
+        <img src={illustrationBox} alt="" className="illustration-box" />
+        <picture>
+          <source media="(min-width: 64em)" srcSet={womanAtDeskLarge} />
+          <img
+            className="woman-at-desk-img"
+            src={womanAtDeskSmall}
+            alt="woman at desk"
+          />
+        </picture>
 
-                  <img
-                    className={`arrow-icon ${
-                      activeFAQ === id ? "rotate-icon-up" : ""
-                    }`}
-                    src={arrowIcon}
-                    alt="arrow icon"
-                  />
-                </div>
-                <p
-                  className={`
+        <div className="card-container">
+          <h1 className="title">FAQ</h1>
+          <ul className="faq-items">
+            {faqList.map(({ id, question, answer }) => (
+              <li className="faq" key={id}>
+                <button className="arrow-btn" id={id} onClick={toggleAnswer}>
+                  <div className="question-container">
+                    <p
+                      className={`question ${
+                        activeFAQ === id ? "active-question" : ""
+                      }`}
+                    >
+                      {question}
+                    </p>
+
+                    <img
+                      className={`arrow-icon ${
+                        activeFAQ === id ? "rotate-icon-up" : ""
+                      }`}
+                      src={arrowIcon}
+                      alt="arrow icon"
+                    />
+                  </div>
+                  <p
+                    className={`
                   ${activeFAQ === id ? "show" : "hide"}-answer
                `}
-                >
-                  {answer}
-                </p>
-                <hr className="divider" />
-              </button>
-            </li>
-          ))}
-        </ul>
+                  >
+                    {answer}
+                  </p>
+                  <hr className="divider" />
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </main>
   );
